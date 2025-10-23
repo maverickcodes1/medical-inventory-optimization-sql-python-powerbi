@@ -98,6 +98,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 ### **1. Univariate Analysis**
 
+
 <p align="center">
   <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221728-1.png"></kbd> <br>
   Figure 1 — Box Plot
@@ -106,24 +107,27 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 - Each boxplot shows a dense cluster of values near the lower end with long whiskers and multiple outliers stretching upward. This indicates right-skewed distributions, meaning most transactions are low in value, but a few are exceptionally high.
 
-- All five variables exhibit numerous outliers, especially Final_Cost and Final_Sales, which have visibly extended tails. These outliers could represent bulk purchases, high-value prescriptions, or rare return events.
+- All five variables exhibit numerous outliers, especially **Final_Cost** and **Final_Sales**, which have visibly extended tails. These outliers could represent bulk purchases, high-value prescriptions, or rare return events.
 
 - While the central boxes for ReturnQuantity and RtnMRP are tightly packed, the outliers are far removed, suggesting rare but significant return events.
 - This could point to operational inefficiencies, product defects, or policy-driven returns that warrant further investigation. Segmenting these cases could help uncover patterns in product performance or customer behavior.
 
+
 <p align="center">
-  <kbd><img width="600" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20222535-1.png"></kbd> <br>
+  <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20222535-1.png"></kbd> <br>
   Figure 2 — Histogram
 </p>
 <br>
 
-- The histograms for Formulation and DrugName show a long tail, with a few items appearing very frequently and many others appearing rarely.
+- The histograms for **Formulation** and **DrugName** show a long tail, with a few items appearing very frequently and many others appearing rarely.
 - This suggests a dominance of certain formulations and drugs in the dataset — likely common prescriptions or high-demand products. Rare entries may represent niche treatments or specialized formulations worth flagging for deeper analysis.
 
-- The SubCat histograms reveal that certain therapeutic categories — like “Vitamins Used in Substance Dependence” — occur far more often than others.
+- The **SubCat** histograms reveal that certain therapeutic categories — like “Vitamins Used in Substance Dependence” — occur far more often than others.
 - This points to a concentration of prescriptions in specific health domains, possibly driven by regional health trends or institutional focus. Understanding this distribution can help optimize inventory, marketing, or research efforts.
 
+
 ### **2. Bivariate Analysis**
+
 
 <p align="center">
   <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221452-1.png"></kbd> <br>
@@ -131,16 +135,31 @@ Addressing these missing values through imputation or removal is crucial to ensu
 </p>
 <br>
 
-- The Quantity vs ReturnQuantity plot shows most data points clustered near the origin, with low return quantities even for high sales volumes.
+- The **Quantity vs ReturnQuantity** plot shows most data points clustered near the origin, with low return quantities even for high sales volumes.
 - This suggests that returns are rare, indicating either strong product reliability or strict return policies. Beneficial to explore whether specific drugs or departments that deviate from this pattern.
 
-- Both Quantity vs Final_Cost and Quantity vs Final_Sales plots show dense clusters near the origin and scattered outliers.
+- Both **Quantity vs Final_Cost** and **Quantity vs Final_Sales** plots show dense clusters near the origin and scattered outliers.
 - This implies that cost and sales don’t increase proportionally with quantity — possibly due to discounts, tiered pricing, or bundled offers. Beneficial to consider engineering features like unit cost or sales per item to normalize these effects.
 
-- The Final_Cost vs Final_Sales plot displays a diagonal trend, indicating a direct and consistent relationship, which is an indicator of strong positive correlation between Final_Cost and Final_Sales
+- The **Final_Cost** vs **Final_Sales** plot displays a diagonal trend, indicating a direct and consistent relationship, which is an indicator of strong positive correlation between Final_Cost and Final_Sales
 - This suggests that sales are tightly linked to cost, which is useful for margin analysis and anomaly detection. Any deviation from this trend could signal pricing errors, promotional impacts, or data quality issues.
 
 ---
 
 ## **Key Findings**
 
+- A 24.92% bounce rate means nearly a quarter of transactions result in returns without final sales. This points to potential issues in product quality, prescription accuracy, or inventory mismatch.
+- Variables like _Quantity_, _ReturnQuantity_, _Final_Cost_, and _Final_Sales_ show very high skewness and kurtosis (e.g., Quantity kurtosis = 463.54). Indicates presence of rare but extreme outliers, requiring log transformation or robust scaling.
+- December had the highest monthly sales (₹373,536), while June had the lowest (₹189,623). Suggests seasonal inventory planning could reduce bounce rate and optimize stock levels.
+- _Sodium Chloride IVF 100ML_ was the highest-selling drug with 1278 units sold. Its associated subcategories — _IV FLUIDS_, _ELECTROLYTES_, _TPN_ and _INTRAVENOUS_ & _OTHER STERILE SOLUTIONS_ — also led in total sales.
+- The combination of INJECTIONS and ANTI-INFECTIVES had the highest number of drugs returned without any sale — 32 distinct drugs. This flags a potential issue in drug effectiveness, demand forecasting, or prescription accuracy.
+- After removing 26 duplicate records, the dataset shrank to 14,192 rows. Mean and variance of key metrics like _Quantity_ and _ReturnQuantity_ became more stable post-cleaning.
+- Most frequent entries:
+###1. Typeofsales: Sale
+###2. Specialisation: Specialisation4
+###3. DrugName: SODIUM CHLORIDE IVF 100ML
+###4. SubCat: INJECTIONS
+   These are likely core inventory items and should be prioritized in procurement.
+- Week 52 had the highest weekly sales (~₹96,458), while Week 0 had the lowest (~₹3,970). Suggests operational or demand surges at year-end — useful for staffing and stocking decisions.
+- _DrugName_, _SubCat_, and _SubCat1_ have **~11.7%** missing values. These data gaps could hinder classification, clustering, or recommendation systems unless imputed, filtered or collected properly.
+- Donut charts and decomposition trees show that _Formulation_ and _Dept_ are major contributors to total quantity sold. These dimensions are ideal for inventory segmentation and targeted optimization.
