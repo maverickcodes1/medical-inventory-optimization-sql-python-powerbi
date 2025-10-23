@@ -100,7 +100,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 
 <p align="center">
-  <kbd><img width="500" height="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221728-1.png"></kbd> <br>
+  <kbd><img width="700" height="800" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221728-1.png"></kbd> <br>
   Figure 1 — Box Plot
 </p>
 <br>
@@ -114,7 +114,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 
 <p align="center">
-  <kbd><img width="500" height="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20222535-1.png"></kbd> <br>
+  <kbd><img width="700" height="800" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20222535-1.png"></kbd> <br>
   Figure 2 — Histogram
 </p>
 <br>
@@ -130,7 +130,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 
 <p align="center">
-  <kbd><img width="500" height="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221452-1.png"></kbd> <br>
+  <kbd><img width="700" height="800" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221452-1.png"></kbd> <br>
   Figure 3 — Scatter Plot
 </p>
 <br>
@@ -149,7 +149,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 ## **Vizualization & Dashboard**
 
 <p align="center">
-  <kbd><img width="500" height="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20231606.png"></kbd> <br>
+  <kbd><img width="700" height="800" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20231606.png"></kbd> <br>
   Figure 3 — Donut Chart
 </p>
 <br>
