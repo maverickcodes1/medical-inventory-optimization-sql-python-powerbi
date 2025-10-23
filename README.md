@@ -65,6 +65,8 @@ Addressing these missing values through imputation or removal is crucial to ensu
 - Power BI (Interactive Visualizations)
 - GitHub
 
+---
+
 ## **Data Preprocessing**
 
 ### **Objectives**
@@ -72,12 +74,14 @@ Addressing these missing values through imputation or removal is crucial to ensu
 - Data Transformation: Convert data into an appropriate format or scale for analysis or modeling.
 - Feature Engineering: Create new relevant features or variables from the existing data to improve the performance of machine learning models.<br>
 
-8 data preprocessing methods were implemented:
+### **Methods Implemented**
 1. Type Casting
 2. Duplication Handling
 3. Handling Missing Values
 4. Handling Null Values
 5. Data manipulation
+
+---
 
 ## **Descriptive Statistics**
 1. First Moment Business Decision: Measure of Central Tendency
@@ -85,5 +89,9 @@ Addressing these missing values through imputation or removal is crucial to ensu
 3. Third Moment Business Decision: Skewness
 4. Forth Moment Business Decision: Kurtosis
 
-**[Click here to view full documentation of data preprocessing (Python)](https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Data_Preprocessing%20(MIO%20-%20Python).py)**
-**[Click here to view full documentation of data preprocessing (SQL)](Data_Preprocessing (MIO - SQL).sql)**
+- **[Click here to view full documentation of data preprocessing (Python)](https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Data_Preprocessing%20(MIO%20-%20Python).py)**
+- **[Click here to view full documentation of data preprocessing (SQL)](https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Data_Preprocessing%20(MIO%20-%20SQL).sql)**
+
+---
+
+
