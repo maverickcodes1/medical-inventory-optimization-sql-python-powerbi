@@ -99,7 +99,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 ### **1. Univariate Analysis**
 
 <p align="center">
-  <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221728.png"></kbd> <br>
+  <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221728-1.png"></kbd> <br>
   Figure 1 — Box Plot
 </p>
 <br>
@@ -112,7 +112,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 - This could point to operational inefficiencies, product defects, or policy-driven returns that warrant further investigation. Segmenting these cases could help uncover patterns in product performance or customer behavior.
 
 <p align="center">
-  <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20222535.png"></kbd> <br>
+  <kbd><img width="600" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20222535-1.png"></kbd> <br>
   Figure 2 — Histogram
 </p>
 <br>
@@ -126,7 +126,7 @@ Addressing these missing values through imputation or removal is crucial to ensu
 ### **2. Bivariate Analysis**
 
 <p align="center">
-  <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221452.png"></kbd> <br>
+  <kbd><img width="500" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20221452-1.png"></kbd> <br>
   Figure 3 — Scatter Plot
 </p>
 <br>
