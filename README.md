@@ -94,4 +94,53 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 ---
 
+## **Exploratory Data Analysis (EDA)**
+
+### **1. Univariate Analysis**
+
+<p align="center">
+  <kbd><img width="500" src="link to boxplot"></kbd> <br>
+  Figure 1 — Box Plot
+</p>
+<br>
+
+- Each boxplot shows a dense cluster of values near the lower end with long whiskers and multiple outliers stretching upward. This indicates right-skewed distributions, meaning most transactions are low in value, but a few are exceptionally high.
+
+- All five variables exhibit numerous outliers, especially Final_Cost and Final_Sales, which have visibly extended tails. These outliers could represent bulk purchases, high-value prescriptions, or rare return events.
+
+- While the central boxes for ReturnQuantity and RtnMRP are tightly packed, the outliers are far removed, suggesting rare but significant return events.
+- This could point to operational inefficiencies, product defects, or policy-driven returns that warrant further investigation. Segmenting these cases could help uncover patterns in product performance or customer behavior.
+
+<p align="center">
+  <kbd><img width="500" src="link to histogram"></kbd> <br>
+  Figure 2 — Histogram
+</p>
+<br>
+
+- The histograms for Formulation and DrugName show a long tail, with a few items appearing very frequently and many others appearing rarely.
+- This suggests a dominance of certain formulations and drugs in the dataset — likely common prescriptions or high-demand products. Rare entries may represent niche treatments or specialized formulations worth flagging for deeper analysis.
+
+- The SubCat histograms reveal that certain therapeutic categories — like “Vitamins Used in Substance Dependence” — occur far more often than others.
+- This points to a concentration of prescriptions in specific health domains, possibly driven by regional health trends or institutional focus. Understanding this distribution can help optimize inventory, marketing, or research efforts.
+
+### **2. Bivariate Analysis**
+
+<p align="center">
+  <kbd><img width="500" src="link to scatter plot"></kbd> <br>
+  Figure 3 — Scatter Plot
+</p>
+<br>
+
+- The Quantity vs ReturnQuantity plot shows most data points clustered near the origin, with low return quantities even for high sales volumes.
+- This suggests that returns are rare, indicating either strong product reliability or strict return policies. Beneficial to explore whether specific drugs or departments that deviate from this pattern.
+
+- Both Quantity vs Final_Cost and Quantity vs Final_Sales plots show dense clusters near the origin and scattered outliers.
+- This implies that cost and sales don’t increase proportionally with quantity — possibly due to discounts, tiered pricing, or bundled offers. Beneficial to consider engineering features like unit cost or sales per item to normalize these effects.
+
+- The Final_Cost vs Final_Sales plot displays a diagonal trend, indicating a direct and consistent relationship, which is an indicator of strong positive correlation between Final_Cost and Final_Sales
+- This suggests that sales are tightly linked to cost, which is useful for margin analysis and anomaly detection. Any deviation from this trend could signal pricing errors, promotional impacts, or data quality issues.
+
+---
+
+## **Key Findings**
 
