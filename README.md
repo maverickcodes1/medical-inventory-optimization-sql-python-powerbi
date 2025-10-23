@@ -154,11 +154,11 @@ Addressing these missing values through imputation or removal is crucial to ensu
 - _Sodium Chloride IVF 100ML_ was the highest-selling drug with 1278 units sold. Its associated subcategories — _IV FLUIDS_, _ELECTROLYTES_, _TPN_ and _INTRAVENOUS_ & _OTHER STERILE SOLUTIONS_ — also led in total sales.
 - The combination of INJECTIONS and ANTI-INFECTIVES had the highest number of drugs returned without any sale — 32 distinct drugs. This flags a potential issue in drug effectiveness, demand forecasting, or prescription accuracy.
 - After removing 26 duplicate records, the dataset shrank to 14,192 rows. Mean and variance of key metrics like _Quantity_ and _ReturnQuantity_ became more stable post-cleaning.
-- Most frequent entries:
-###1. Typeofsales: Sale
-###2. Specialisation: Specialisation4
-###3. DrugName: SODIUM CHLORIDE IVF 100ML
-###4. SubCat: INJECTIONS
+- Most frequent entries: <br>
+   1. Typeofsales: Sale <br>
+   2. Specialisation: Specialisation4 <br>
+   3. DrugName: SODIUM CHLORIDE IVF 100ML <br>
+   4. SubCat: INJECTIONS <br>
    These are likely core inventory items and should be prioritized in procurement.
 - Week 52 had the highest weekly sales (~₹96,458), while Week 0 had the lowest (~₹3,970). Suggests operational or demand surges at year-end — useful for staffing and stocking decisions.
 - _DrugName_, _SubCat_, and _SubCat1_ have **~11.7%** missing values. These data gaps could hinder classification, clustering, or recommendation systems unless imputed, filtered or collected properly.
