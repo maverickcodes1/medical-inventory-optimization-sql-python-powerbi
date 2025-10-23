@@ -146,7 +146,24 @@ Addressing these missing values through imputation or removal is crucial to ensu
 
 ---
 
-## **Key Findings**
+## **Vizualization & Dashboard**
+
+<p align="center">
+  <kbd><img width="500" height="90" src="https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/Images/Screenshot%202025-10-23%20231606.png"></kbd> <br>
+  Figure 3 — Donut Chart
+</p>
+<br>
+
+- These two donut charts: one displaying the sum of quantities by formulation, and the other showing the sum of quantities by department.
+- Beneficial in indicating how the inventory should managed and what quantities of particular drugs to be stored with respect to the total capacity of the inventory for minimum wastage.
+
+- **[Click here to view final stakeholder presentation (PowerPoint)](https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/DA%20Final%20Presentation%20(MIO).pptx)**
+- **[Click here to view full dashboard (Google Looker Studio)](https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/dash%20board(google%20looker%20studio).pdf)**
+- **[Click here to view full dashboard (Power BI)](https://github.com/maverickcodes1/medical-inventory-optimization-sql-python-powerbi/blob/main/OPM%20dash%20board(Power%20bi).pdf)**
+
+---
+
+## **Insights & Recommendations**
 
 - A 24.92% bounce rate means nearly a quarter of transactions result in returns without final sales. This points to potential issues in product quality, prescription accuracy, or inventory mismatch.
 - Variables like _Quantity_, _ReturnQuantity_, _Final_Cost_, and _Final_Sales_ show very high skewness and kurtosis (e.g., Quantity kurtosis = 463.54). Indicates presence of rare but extreme outliers, requiring log transformation or robust scaling.
@@ -159,7 +176,17 @@ Addressing these missing values through imputation or removal is crucial to ensu
    2. Specialisation: Specialisation4 <br>
    3. DrugName: SODIUM CHLORIDE IVF 100ML <br>
    4. SubCat: INJECTIONS <br>
-   These are likely core inventory items and should be prioritized in procurement.
+   These are likely core inventory items and should be prioritized in procurement. <br>
 - Week 52 had the highest weekly sales (~₹96,458), while Week 0 had the lowest (~₹3,970). Suggests operational or demand surges at year-end — useful for staffing and stocking decisions.
 - _DrugName_, _SubCat_, and _SubCat1_ have **~11.7%** missing values. These data gaps could hinder classification, clustering, or recommendation systems unless imputed, filtered or collected properly.
 - Donut charts and decomposition trees show that _Formulation_ and _Dept_ are major contributors to total quantity sold. These dimensions are ideal for inventory segmentation and targeted optimization.
+
+---
+
+## **Author**
+
+- **Karan Ray**  
+  **Data Analyst**  
+📧 Email: karanrayz15@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/karan-ray-8a3342215/)
+
